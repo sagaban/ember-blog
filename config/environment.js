@@ -6,7 +6,10 @@ module.exports = function(environment) {
     podModulePrefix: 'blog/features',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://YOUR-FIREBASE-NAME.firebaseio.com/',
+    firebase: 'https://flickering-inferno-2097.firebaseio.com/',
+    torii: {
+      sessionServiceName: 'session' 
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
